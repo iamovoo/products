@@ -1,5 +1,5 @@
 <template>
-<Card :products="products" :id="id"/>
+  <Card :products="products" :id="id"/>
 </template>
 
 <script setup>
@@ -10,7 +10,5 @@ products.value = data.value.products
 console.log(data.value);
 </script>
 <style>
-/* .card{
-  border-radius: 50px;
-} */
+
 </style>
