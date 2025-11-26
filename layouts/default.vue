@@ -58,10 +58,10 @@
   </nav>
   </div>
    <div class="block md:hidden">
-  <nav class=" flex justify-between py-5 px-2 background align-middle fixed w-screen border-b-2 border-[#334155] z-10 " @click="cancel">
-    <div >
+  <nav class=" flex justify-between py-5 px-4 background align-middle fixed w-screen border-b-2 border-[#334155] z-10 " @click="cancel">
+    <!-- <div >
       <h2 class=" font-bold text-lg "><nuxt-link to="/">D-S</nuxt-link></h2>
-    </div>
+    </div> -->
     <div  class=" relative">
     <input type="text" class=" pl-2 rounded-md p-1  bg-blue-950 w-64" placeholder="Search Items" @input="search" v-model="searchItem">
     <div class=" overflow-y-scroll h-48 rounded-xl py-2 w-96 searchbar bg-[#131e36] z-10 scroll-smooth" v-if="isShowSearchbar">
@@ -71,24 +71,24 @@
       </div>
       </div>
     </div>
-    <div class=" bg-blue-950 p-1 relative">
-      <img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/50/align-justify.png" alt="align-justify"/>
-      <div class=" absolute ">
-        <div class="link border bg-blue-950">
-         <nuxt-link to="/products" class="text-sm hover:underline hover:opacity-90 cursor-pointer font-semibold">Home</nuxt-link>
-       <!-- <div>  -->
-         <p class="text-sm hover:underline hover:opacity-90 cursor-pointer font-semibold"><nuxt-link to="/products/items">Products</nuxt-link></p>
-       <!-- </div> -->
+    <div class=" p-1 relative">
+      <div class=" flex gap-3 px-1 justify-center" @click="">
+       <div class=" bg-blue-950 p-1"> <img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/50/align-justify.png" alt="align-justify"/></div> 
+      </div>
+      <div class=" absolute top-[45px] left-[2px]" >
+        <div class="link  bg-blue-950">
+         <nuxt-link to="/products" class="text-sm hover:opacity-85 cursor-pointer font-semibold px-4 py-2">Home</nuxt-link>
+         <p class=" text-sm  hover:opacity-85 cursor-pointer font-semibold border-b px-4 py-3"><nuxt-link to="/products/items">Products</nuxt-link></p>
            <nuxt-link to="/cart">
-           <div class="relative">
-             <div class=" bg-red-700 rounded-3xl w-5 absolute text-xs  text-center right-0 top-0">{{cart.total}}</div> 
-             <p class= "font-bold pb-2 text-lg ">Cart</p>
+           <div class="relative px-4 py-2 ">
+             <div class=" bg-red-700 rounded-3xl w-5 absolute text-xs  text-center right-6 top-0">{{cart.total}}</div> 
+             <p class= " pb-2 text-sm ">Cart</p>
            </div>
            </nuxt-link>
           </div>
         </div>
       </div>
-      <div class=" font-bold border-l-2 text-lsm "><span  class=" text-md">👋🏻</span> {{username}}</div>
+      <div class=" font-bold"><span  class=" text-md">👋🏻</span> {{username}}</div>
 
   </nav>
   </div>
@@ -147,52 +147,4 @@ const cart = useCartStores()
     position: absolute;
     top:43px;
   }
-  /* @media (max-width:880px) {
-  input{
-    width: 200px;
-  }
-  }
-  @media (max-width:887.33px) {
-  .searchbar{
-    position: absolute;
-    top: 12%;
-    left: 10%;
-
-  }
-  }
-  @media (max-width:1029.33px) {
-  .searchbar{
-    position: absolute;
-    top: 12%;
-    left: 30%;
-
-  }
-  }
-  @media (max-width:881px) {
-  .searchbar{
-  width: 290px;
-  left: 31%;
-  }
-  }
-  @media (max-width:762px) {
-  .searchbar{
-  width: 290px;
-  left: 26%;
-  height: 180px;
-  }
-  } */
-  /* A. Dark Mode
-  Background: #0F172A
-  Nav/Footer: #1E293B
-  Text: #F1F5F9
-  Card: #1E293B
-  Accent: #38BDF8 (sky blue)
-
-  B. Warm Fashion Store (Boutique Style)
-  Background: #FAF5F0
-  Nav/Footer: #FFFFFF
-  Accent: #D97706 (amber)
-  Card: #FFFFFF with soft shadow
-  Text: #3B3B3B */
-
   </style>

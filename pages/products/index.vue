@@ -1,6 +1,6 @@
   <template>
 <div class="hidden md:block">
-      <div class="w-screen min-h-screen backgroundColor text-white p-10">
+    <div class="w-screen min-h-screen backgroundColor text-white p-10">
 
       <div class=" flex justify-center align-middle pt-8">
         <header class="bg-white p-6 shadow-sm text-center rounded-lg ">
@@ -33,7 +33,7 @@
     </div>
 </div>
 <div class=" block md:hidden">
-      <div class="w-screen min-h-screen backgroundColor text-white p-5">
+    <div class="w-screen min-h-screen backgroundColor text-white p-5">
 
       <div class=" flex justify-center align-middle pt-3">
         <header class="bg-white p-6 shadow-sm text-center rounded-lg ">
@@ -99,6 +99,7 @@
   items.value = [...searchedItem.value];
   console.log(searchedItem.value, items.value);
   }
+
   </script>
   <style>
   header{
